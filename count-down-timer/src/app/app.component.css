@@ -1,0 +1,89 @@
+.container {
+    background-image: url('/assets/images/bg-stars.svg');
+    background-color: #231d2b;
+    height: 100vh;
+    position: relative;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header-text {
+    color: #fffeff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 5px;
+    font-size: 18px;
+    font-family: monospace;
+  }
+  
+  /* Main Content */
+  main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Footer */
+  .footer {
+    background-image: url('/assets/images/pattern-hills.svg');
+    background-size: cover;
+    height: 150px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 30px;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .header-text {
+      font-size: 14px;
+      letter-spacing: 3px;
+    }
+    
+    .footer-icons img {
+      height: 16px;
+      width: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header {
+      height: 80px;
+    }
+  
+    .header-text {
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+  
+    .footer {
+      height: 120px;
+    }
+  
+    .footer-icons {
+      gap: 10px;
+    }
+  
+    .footer-icons img {
+      height: 14px;
+      width: 14px;
+    }
+  }
+  

@@ -1,0 +1,83 @@
+/* Base Styles */
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+}
+
+.time-unit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.time-value {
+  height: 120px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f56089;
+  background-color: #2c2c44;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.time-label {
+  color: #82829c;
+  text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .countdown-timer {
+    height: 600px; 
+  }
+
+  .time-value {
+    height: 100px;
+    width: 100px;
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .countdown-timer {
+    height: 500px; 
+    font-size: 1.2rem;
+  }
+
+  .time-value {
+    height: 80px;
+    width: 80px;
+    font-size: 30px;
+  }
+
+  .time-label {
+    font-size: 0.9rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .countdown-timer {
+    height: 400px; 
+    font-size: 1rem;
+  }
+
+  .time-value {
+    height: 60px;
+    width: 60px;
+    font-size: 24px;
+  }
+
+  .time-label {
+    font-size: 0.8rem; 
+  }
+}
